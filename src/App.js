@@ -1,23 +1,21 @@
-import logo from './logo.svg';
+import React from 'react';
+import Header from './comp/Header';
+import Balance from './comp/Balance';
+import IncomeExpenses from './comp/IncomeExpenses';
+import TrasectionList from './comp/TrasectionList';
+import AddTransection from './comp/AddTransection';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header />
+      <div className='container'>
+          <Balance />
+          <IncomeExpenses />
+          <TrasectionList />
+          <AddTransection />
+      </div>
     </div>
   );
 }
